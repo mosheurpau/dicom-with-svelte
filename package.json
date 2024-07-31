@@ -26,7 +26,7 @@
 	"main": "postcss.config.js",
 	"dependencies": {
 		"@cornerstonejs/core": "^1.83.1",
-		"@cornerstonejs/dicom-image-loader": "^1.82.5",
+		"@cornerstonejs/dicom-image-loader": "^1.83.1",
 		"@cornerstonejs/streaming-image-volume-loader": "^1.83.1",
 		"@cornerstonejs/tools": "^1.83.1",
 		"@vitejs/plugin-vue": "^5.0.5",

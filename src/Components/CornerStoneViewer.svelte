@@ -1,6 +1,11 @@
 <script>
+  // @ts-nocheck
+
   import { onMount } from "svelte";
 
+  /**
+   * @type {HTMLDivElement}
+   */
   let content;
   let viewportType;
 

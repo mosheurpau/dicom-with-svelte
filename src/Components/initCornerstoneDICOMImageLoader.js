@@ -1,8 +1,10 @@
-import dicomParser from 'dicom-parser';
-import * as cornerstone from '@cornerstonejs/core';
-import * as cornerstoneTools from '@cornerstonejs/tools';
-import cornerstoneDICOMImageLoader from '@cornerstonejs/dicom-image-loader';
+// @ts-nocheck
+import dicomParser from "dicom-parser";
+import * as cornerstone from "@cornerstonejs/core";
+import * as cornerstoneTools from "@cornerstonejs/tools";
+import cornerstoneDICOMImageLoader from "@cornerstonejs/dicom-image-loader";
 
+// @ts-ignore
 window.cornerstone = cornerstone;
 window.cornerstoneTools = cornerstoneTools;
 const { preferSizeOverAccuracy, useNorm16Texture } =

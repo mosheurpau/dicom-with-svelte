@@ -1,12 +1,13 @@
-import initProviders from './initProviders';
-import initCornerstoneDICOMImageLoader from './initCornerstoneDICOMImageLoader';
-import initVolumeLoader from './initVolumeLoader';
-import { init as csRenderInit } from '@cornerstonejs/core';
-import { init as csToolsInit } from '@cornerstonejs/tools';
+// @ts-nocheck
+import initProviders from "./initProviders";
+import initCornerstoneDICOMImageLoader from "./initCornerstoneDICOMImageLoader";
+import initVolumeLoader from "./initVolumeLoader";
+import { init as csRenderInit } from "@cornerstonejs/core";
+import { init as csToolsInit } from "@cornerstonejs/tools";
 
- async function initDemo() {
+async function initDemo() {
   initProviders();
-  initCornerstoneDICOMImageLoader(); 
+  initCornerstoneDICOMImageLoader();
   await csRenderInit({ peerImport });
   await csToolsInit();
 }
@@ -17,10 +18,10 @@ import { init as csToolsInit } from '@cornerstonejs/tools';
  * on any standards compliant ecmascript environment.
  */
 async function peerImport(moduleId) {
-  if (moduleId === 'dicom-microscopy-viewer') {
+  if (moduleId === "dicom-microscopy-viewer") {
     return importGlobal(
-      '/dicom-microscopy-viewer/dicomMicroscopyViewer.min.js',
-      'dicomMicroscopyViewer'
+      "/dicom-microscopy-viewer/dicomMicroscopyViewer.min.js",
+      "dicomMicroscopyViewer"
     );
   }
 }
