@@ -27,7 +27,7 @@ async function peerImport(moduleId) {
 }
 
 async function importGlobal(path, globalName) {
-  await import(/* webpackIgnore: true */ path);
+  await import(path);
   return window[globalName];
 }
 export { initDemo };
